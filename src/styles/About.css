@@ -1,0 +1,166 @@
+/* Container */
+.about-section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #eee;
+}
+
+/* Neon Title - Sharp Glow */
+.neon-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  background: linear-gradient(90deg, #ff4ec0, #4cafef, #00ffe1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+/* About Me Paragraph */
+.about-me p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+  color: #ddd;
+}
+
+/* Inline Highlight for Name in Paragraph - Animated Rainbow */
+.highlight-name-inline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff4ec0; /* fallback */
+  animation: rainbow 4s linear infinite; /* cycles colors */
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.highlight-name-inline:hover {
+  transform: scale(1.15);
+  text-shadow: 0 0 4px #ff4ec0, 0 0 4px #4cafef, 0 0 4px #00ffe1;
+}
+
+/* Rainbow animation for name */
+@keyframes rainbow {
+  0% { color: #ff4ec0; }
+  15% { color: #ff7eb3; }
+  30% { color: #ffb347; }
+  45% { color: #4cafef; }
+  60% { color: #00c896; }
+  75% { color: #ffdd00; }
+  90% { color: #ff4ec0; }
+  100% { color: #ff4ec0; }
+}
+
+/* Education Section - Timeline Style */
+.education {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 60px;
+}
+
+.education::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #ff4ec0, #4cafef, #00ffe1);
+  border-radius: 2px;
+}
+
+/* Education Card */
+.education-card {
+  position: relative;
+  background: rgba(30,30,30,0.85);
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+  transition: all 0.3s ease;
+}
+
+.education-card::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background: #ff4ec0;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ff4ec0, 0 0 10px #4cafef; /* sharp node glow */
+}
+
+.education-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+/* Education Content */
+.edu-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.3rem;
+  color: #4cafef;
+}
+
+.edu-info p {
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.edu-year, .edu-cgpa {
+  display: inline-block;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  margin-right: 10px;
+}
+
+.edu-year {
+  background: #ff4ec0;
+  color: #111;
+}
+
+.edu-cgpa {
+  background: #00ffe1;
+  color: #111;
+}
+
+/* Section Titles (Education) */
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff7eb3, #4cafef, #00c896);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education {
+    padding-left: 20px;
+  }
+
+  .education-card::before {
+    left: -28px;
+  }
+
+  .neon-title {
+    font-size: 2rem;
+  }
+
+  .highlight-name-inline {
+    font-size: 1.3rem;
+  }
+}

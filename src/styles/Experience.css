@@ -1,0 +1,184 @@
+/* ================= Experience Section ================= */
+.experience-section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff7eb3, #4cafef, #00c896);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 60px;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: linear-gradient(to bottom, #ff416c, #ff4b2b, #00c896);
+  transform: translateX(-50%);
+}
+
+/* Timeline items */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* Timeline content box */
+.timeline-content {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+/* Icons */
+.timeline-icon {
+  position: absolute;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4cafef;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.timeline-item.left .timeline-icon {
+  right: -50px;
+}
+
+.timeline-item.right .timeline-icon {
+  left: -50px;
+}
+
+/* Title row (Role + Badge) */
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: nowrap; /* Prevent badge from moving to next line */
+}
+
+.title-row h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #00c896;
+  white-space: nowrap; /* Prevent role text from breaking */
+}
+
+/* Duration Badge */
+.title-row .badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b, #00c896, #4cafef);
+  background-size: 300% 300%;
+  animation: badgeGradient 5s ease infinite;
+  margin-left: 10px;
+  white-space: nowrap; /* Prevent badge text from breaking */
+}
+
+/* Badge Gradient Animation */
+@keyframes badgeGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Company Name with Animated Gradient */
+.company-name {
+  font-weight: 600;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #ff7eb3, #4cafef, #00c896, #ffcc00);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: companyGradient 5s ease infinite;
+}
+
+@keyframes companyGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Duration text */
+.timeline-content .duration {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+.timeline-content p {
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+/* Timeline content heading styling */
+.timeline-content h4 {
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+  .timeline-item {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 20px;
+    text-align: left;
+  }
+  .timeline-item.left, .timeline-item.right {
+    left: 0;
+  }
+  .timeline-item .timeline-icon {
+    left: 0 !important;
+    right: auto !important;
+  }
+}

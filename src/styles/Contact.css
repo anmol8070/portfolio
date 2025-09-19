@@ -1,0 +1,131 @@
+/* Container */
+.contact-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* title above card */
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: #eee;
+  text-align: center;
+}
+
+/* Contact Me Title */
+.contact-title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff4ec0, #00ffe1, #ff7eb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+}
+
+/* Contact Card */
+.contact-card {
+  background: rgba(30, 30, 30, 0.95);
+  padding: 60px 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* even vertical spacing */
+  gap: 25px;
+  width: 450px;
+  min-height: 500px; /* taller for balanced spacing */
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Name */
+.contact-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff4ec0, #00ffe1, #ff7eb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+}
+
+/* Email & Phone */
+.contact-email,
+.contact-phone {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-email a,
+.contact-phone a {
+  color: #00ffe1;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.contact-email a:hover,
+.contact-phone a:hover {
+  color: #ff4ec0;
+}
+
+/* Social Icons */
+.contact-socials {
+  display: flex;
+  gap: 35px;
+  margin-top: 25px;
+}
+
+.social-icon {
+  font-size: 2.5rem;
+  color: #eee;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ff4ec0;
+  transform: scale(1.3);
+}
+
+/* Footer */
+.contact-footer {
+  margin-top: 50px;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-card {
+    width: 90%;
+    padding: 50px 30px;
+    gap: 20px;
+    min-height: 450px;
+  }
+
+  .contact-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+
+  .contact-name {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-email,
+  .contact-phone {
+    font-size: 1.2rem;
+  }
+
+  .social-icon {
+    font-size: 2rem;
+  }
+
+  .contact-footer {
+    margin-top: 35px;
+  }
+}
