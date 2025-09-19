@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.b62085ac.css",
+    "main.js": "/portfolio/static/js/main.98c788e7.js",
+    "static/js/453.e329f83b.chunk.js": "/portfolio/static/js/453.e329f83b.chunk.js",
+    "static/media/tourist.png": "/portfolio/static/media/tourist.32f4b73da96e4edaf528.png",
+    "static/media/rentseelhub.png": "/portfolio/static/media/rentseelhub.f0e13c1ae7a360393722.png",
+    "static/media/sugarcane.png": "/portfolio/static/media/sugarcane.729ed31cefaab41a75d8.png",
+    "static/media/neocampus.png": "/portfolio/static/media/neocampus.e30e8c4453a1cbbaed81.png",
+    "static/media/antidrowsy.png": "/portfolio/static/media/antidrowsy.f49b72c6870ba29e0a13.png",
+    "static/media/formbuilder.png": "/portfolio/static/media/formbuilder.680305c73079b807a804.png",
+    "static/media/infosysprojectwork.png": "/portfolio/static/media/infosysprojectwork.a6687b66d90b3634fc88.png",
+    "static/media/bloodgroup.png": "/portfolio/static/media/bloodgroup.dba27bba7c5bd0c2159d.png",
+    "static/media/cetcell.png": "/portfolio/static/media/cetcell.c6ce4754a3fa5e5a5cab.png",
+    "static/media/autofill.png": "/portfolio/static/media/autofill.42e0900077a402bc59e2.png",
+    "static/media/anmol.jpg": "/portfolio/static/media/anmol.343e62c0660fd3914c53.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.b62085ac.css.map": "/portfolio/static/css/main.b62085ac.css.map",
+    "main.98c788e7.js.map": "/portfolio/static/js/main.98c788e7.js.map",
+    "453.e329f83b.chunk.js.map": "/portfolio/static/js/453.e329f83b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b62085ac.css",
+    "static/js/main.98c788e7.js"
+  ]
+}
