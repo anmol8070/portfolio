@@ -19,13 +19,13 @@ const projects = [
     title: "Sugarcane Factory Management System",
     description: "Manages sugarcane production, inventory, and sales.",
     image: sugarcane,
-    link: "https://github.com/anmol8070/Sugarcane-Factory-Management-System",
+    link: "https://github.com/anmol8070/Tourist-management-System.git",
   },
   {
     title: "RentSellHub",
     description: "Property management system for rent and sale listings.",
     image: rentseelhub,
-    link: "https://github.com/anmol8070/RentSellHub",
+    link: "https://github.com/anmol8070/Rent-Sell-Hub.git",
   },
   {
     title: "Tourist Management System",
